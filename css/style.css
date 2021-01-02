@@ -26,10 +26,10 @@ li{
 
 .header{
 	padding-top: 47px;
-	background-image: url(../img/header-img.svg);
+	background: 
+		url(../img/header-img.svg) 100% no-repeat,
+		url(../img/header-background.png) 0% 0%;
 	background-repeat: no-repeat;
-	background-position-y: 240px;
-	background-position-x: 720px;
 	padding-bottom: 40px;
 }
 
@@ -37,7 +37,7 @@ li{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 80px;
+	margin-bottom: 80px;\
 }
 
 .logo{
@@ -256,9 +256,9 @@ a{
 
 .getting-elements-items::after{
 	counter-increment: getting;
-	content: "" counter(getting) " .";
+	content: "0" counter(getting) "";
 	position: relative;
-	left: 96%;
+	left: 94%;
 	bottom: 150px;
 	width: 15px;
 	height: 22px;
@@ -424,6 +424,10 @@ a{
 	margin-bottom: 60px;
 }
 
+.programm__list{
+	counter-reset: programm__counter;
+}
+
 .programm__list-item{
 	list-style-type: none;
 	display: flex;
@@ -435,6 +439,20 @@ a{
 	flex-wrap: wrap;
 	padding: 18px 0 0 0;
 	margin-bottom: 10px;
+}
+
+.programm__list-item::before{
+	counter-increment: programm__counter;
+	content: "" counter(programm__counter) '';
+	position: absolute;
+	background: #A7B5F2;
+	color: #fff;
+	border-radius: 24px 0px 0px 24px;
+	transform: matrix(1, 0, 0, 1, 0, -17);
+	padding: 18px 27px 18px 29px;
+	max-width: 5px;font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
 }
 
 .programm__list-item__title{
@@ -779,6 +797,30 @@ a{
 	top: 400px;
 }
 
+.caseSlider .slick-prev::after{
+	position: relative;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid #1E376A;
+    border-top: 1.5px solid #1E376A;
+	transform: rotate(225deg);
+	left: 2px;
+}
+
+.caseSlider .slick-next::after{
+	position: relative;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid #fff;
+    border-top: 1.5px solid #fff;
+	transform: rotate(45deg);
+	right: 2px;
+}
+
 .caseSlider .slick-arrow{
 	font-size: 0;
 
@@ -824,7 +866,7 @@ a{
 }
 
 .review-slider__item__user h5{
-	font-weight: 700;;
+	font-weight: 700;
 	font-size: 24px;
 	line-height: 38px;
 	color: #1E376A;
@@ -901,6 +943,30 @@ a{
 
 .review-slider .slick-arrow{
 	font-size: 0;
+}
+
+.review-slider .slick-next::after{
+	position: relative;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid #FFF;
+    border-top: 1.5px solid #FFF;
+	transform: rotate(45deg);
+	right: 2px;
+}
+
+.review-slider .slick-prev::after{
+	position: relative;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid #1E376A;
+    border-top: 1.5px solid #1E376A;
+	transform: rotate(225deg);
+	left: 2px;
 }
 
 .price-form__content{
