@@ -15,33 +15,37 @@
 <body>
 	<div class="header">
 		<div class="container">
-			<div class="navigation">
+			<nav class="nav">
 				<div class="logo">
-					<a href="#">
-						<img src="img/logo.png" alt="">
-					</a>
+					<img src="img/logo.png" alt="">
 				</div>
 				<div class="menu">
-					<a class="item" href="#getting">
-						О семинаре
-					</a>
-					<a class="item" href="#programm">
-						Программа
-					</a>
-					<a class="item" href="#authors">
-						Авторы
-					</a>
-					<a class="item" href="#review">
-						Отзывы
-					</a>
-					<a class="item" href="#contacts">
-						Контакты
-					</a>
-					<a class="item" href="#">
-						Видео-приглашение
-					</a>
+					<input id="menu__toggle" type="checkbox">
+					<label class="menu__btn" for="menu__toggle">
+						<span></span>
+					</label>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="">О семинаре</a>
+						</li>
+						<li class="menu__item">
+							<a href="">Программа</a>
+						</li>
+						<li class="menu__item">
+							<a href="">Авторы</a>
+						</li>
+						<li class="menu__item">
+							<a href="">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="">Контакты</a>
+						</li>
+						<li class="menu__item">
+							<a href="">Видео-приглашение</a>
+						</li>
+					</ul>
 				</div>
-			</div>
+			</nav>
 			<div class="header__about">
 				<div class="header__about-text">
 					<h1 class="header__about-h1">
@@ -714,230 +718,211 @@
 			</h2>
 			<div class="caseSlider">
 				<div class="caseSlider-item">
-					<div class="caseSlider-item-content">
-						<div class="caseSlider-item-app-image">
-							<img class="app-image" src="img/caseApp.png" alt="">
+					<div class="caseSlider__content">
+						<div class="caseSlider__content__app-image">
+							<img src="img/caseApp.png" alt="">
 						</div>
-						<div class="caseSlider-item-about">
-							<h3 class="caseSlider-item-about__title">
-								PicsArt	
-							</h3>	
-							<div class="caseSlider-item-about__goal">
-								<h5 class="caseSlider-item-about-goalTitle">
-									Задача
-								</h5>
-								<p>
-									вывод на рынок США
-								</p>
-							</div>
-							<div class="caseSlider-item-about__lists">
-								<ul class="result__platform-title">
-									<li class="result__platform-title-item">
-										<h5>
-											Платформы
-										</h5>
-									</li>
-									<li class="result__platform-title-item">
-										<h5>
-											Результаты
-										</h5>
-									</li>
-								</ul>
-								<ul class="result__platform-about">
-									<li class="result__platform-about-item">
+						<div class="caseSlider__content__app-about">
+							<h3 class="appTitle">
+								PicsArt
+							</h3>
+							<p class="app__titleGoal">
+								Задача
+							</p>
+							<p class="app__goalAbout">
+								Вывод на рынок США
+							</p>
+							<div class="app__about">
+								<div class="app__platforms">
+									<h5>
+										Платформы
+									</h5>
+									<p>
 										iOS, Android
-									</li>
-									<li class="result__platform-about-item">
-										300,000 установок
-									</li>
-									<li class="result__platform-about-item">
-										$0.7 средний CPI
-									</li>
-								</ul>
+									</p>
+								</div>
+								<div class="app__result">
+									<h5>
+										Результаты
+									</h5>
+									<ul class="app__result__list">
+										<li>
+											300.000 установок
+										</li>
+										<li>
+											$0.7 средний CPI
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="caseSlider-item">
-					<div class="caseSlider-item-content">
-						<div class="caseSlider-item-app-image">
-							<img class="app-image" src="img/caseApp.png" alt="">
+					<div class="caseSlider__content">
+						<div class="caseSlider__content__app-image">
+							<img src="img/caseApp.png" alt="">
 						</div>
-						<div class="caseSlider-item-about">
-							<h3 class="caseSlider-item-about__title">
-								PicsArt	
-							</h3>	
-							<div class="caseSlider-item-about__goal">
-								<h5 class="caseSlider-item-about-goalTitle">
-									Задача
-								</h5>
-								<p>
-									вывод на рынок США
-								</p>
-							</div>
-							<div class="caseSlider-item-about__lists">
-								<ul class="result__platform-title">
-									<li class="result__platform-title-item">
-										<h5>
-											Платформы
-										</h5>
-									</li>
-									<li class="result__platform-title-item">
-										<h5>
-											Результаты
-										</h5>
-									</li>
-								</ul>
-								<ul class="result__platform-about">
-									<li class="result__platform-about-item">
+						<div class="caseSlider__content__app-about">
+							<h3 class="appTitle">
+								PicsArt
+							</h3>
+							<p class="app__titleGoal">
+								Задача
+							</p>
+							<p class="app__goalAbout">
+								Вывод на рынок США
+							</p>
+							<div class="app__about">
+								<div class="app__platforms">
+									<h5>
+										Платформы
+									</h5>
+									<p>
 										iOS, Android
-									</li>
-									<li class="result__platform-about-item">
-										300,000 установок
-									</li>
-									<li class="result__platform-about-item">
-										$0.7 средний CPI
-									</li>
-								</ul>
+									</p>
+								</div>
+								<div class="app__result">
+									<h5>
+										Результаты
+									</h5>
+									<ul class="app__result__list">
+										<li>
+											300.000 установок
+										</li>
+										<li>
+											$0.7 средний CPI
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="caseSlider-item">
-					<div class="caseSlider-item-content">
-						<div class="caseSlider-item-app-image">
-							<img class="app-image" src="img/caseApp.png" alt="">
+					<div class="caseSlider__content">
+						<div class="caseSlider__content__app-image">
+							<img src="img/caseApp.png" alt="">
 						</div>
-						<div class="caseSlider-item-about">
-							<h3 class="caseSlider-item-about__title">
-								PicsArt	
-							</h3>	
-							<div class="caseSlider-item-about__goal">
-								<h5 class="caseSlider-item-about-goalTitle">
-									Задача
-								</h5>
-								<p>
-									вывод на рынок США
-								</p>
-							</div>
-							<div class="caseSlider-item-about__lists">
-								<ul class="result__platform-title">
-									<li class="result__platform-title-item">
-										<h5>
-											Платформы
-										</h5>
-									</li>
-									<li class="result__platform-title-item">
-										<h5>
-											Результаты
-										</h5>
-									</li>
-								</ul>
-								<ul class="result__platform-about">
-									<li class="result__platform-about-item">
+						<div class="caseSlider__content__app-about">
+							<h3 class="appTitle">
+								PicsArt
+							</h3>
+							<p class="app__titleGoal">
+								Задача
+							</p>
+							<p class="app__goalAbout">
+								Вывод на рынок США
+							</p>
+							<div class="app__about">
+								<div class="app__platforms">
+									<h5>
+										Платформы
+									</h5>
+									<p>
 										iOS, Android
-									</li>
-									<li class="result__platform-about-item">
-										300,000 установок
-									</li>
-									<li class="result__platform-about-item">
-										$0.7 средний CPI
-									</li>
-								</ul>
+									</p>
+								</div>
+								<div class="app__result">
+									<h5>
+										Результаты
+									</h5>
+									<ul class="app__result__list">
+										<li>
+											300.000 установок
+										</li>
+										<li>
+											$0.7 средний CPI
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="caseSlider-item">
-					<div class="caseSlider-item-content">
-						<div class="caseSlider-item-app-image">
-							<img class="app-image" src="img/caseApp.png" alt="">
+					<div class="caseSlider__content">
+						<div class="caseSlider__content__app-image">
+							<img src="img/caseApp.png" alt="">
 						</div>
-						<div class="caseSlider-item-about">
-							<h3 class="caseSlider-item-about__title">
-								PicsArt	
-							</h3>	
-							<div class="caseSlider-item-about__goal">
-								<h5 class="caseSlider-item-about-goalTitle">
-									Задача
-								</h5>
-								<p>
-									вывод на рынок США
-								</p>
-							</div>
-							<div class="caseSlider-item-about__lists">
-								<ul class="result__platform-title">
-									<li class="result__platform-title-item">
-										<h5>
-											Платформы
-										</h5>
-									</li>
-									<li class="result__platform-title-item">
-										<h5>
-											Результаты
-										</h5>
-									</li>
-								</ul>
-								<ul class="result__platform-about">
-									<li class="result__platform-about-item">
+						<div class="caseSlider__content__app-about">
+							<h3 class="appTitle">
+								PicsArt
+							</h3>
+							<p class="app__titleGoal">
+								Задача
+							</p>
+							<p class="app__goalAbout">
+								Вывод на рынок США
+							</p>
+							<div class="app__about">
+								<div class="app__platforms">
+									<h5>
+										Платформы
+									</h5>
+									<p>
 										iOS, Android
-									</li>
-									<li class="result__platform-about-item">
-										300,000 установок
-									</li>
-									<li class="result__platform-about-item">
-										$0.7 средний CPI
-									</li>
-								</ul>
+									</p>
+								</div>
+								<div class="app__result">
+									<h5>
+										Результаты
+									</h5>
+									<ul class="app__result__list">
+										<li>
+											300.000 установок
+										</li>
+										<li>
+											$0.7 средний CPI
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="caseSlider-item">
-					<div class="caseSlider-item-content">
-						<div class="caseSlider-item-app-image">
-							<img class="app-image" src="img/caseApp.png" alt="">
+					<div class="caseSlider__content">
+						<div class="caseSlider__content__app-image">
+							<img src="img/caseApp.png" alt="">
 						</div>
-						<div class="caseSlider-item-about">
-							<h3 class="caseSlider-item-about__title">
-								PicsArt	
-							</h3>	
-							<div class="caseSlider-item-about__goal">
-								<h5 class="caseSlider-item-about-goalTitle">
-									Задача
-								</h5>
-								<p>
-									вывод на рынок США
-								</p>
-							</div>
-							<div class="caseSlider-item-about__lists">
-								<ul class="result__platform-title">
-									<li class="result__platform-title-item">
-										<h5>
-											Платформы
-										</h5>
-									</li>
-									<li class="result__platform-title-item">
-										<h5>
-											Результаты
-										</h5>
-									</li>
-								</ul>
-								<ul class="result__platform-about">
-									<li class="result__platform-about-item">
+						<div class="caseSlider__content__app-about">
+							<h3 class="appTitle">
+								PicsArt
+							</h3>
+							<p class="app__titleGoal">
+								Задача
+							</p>
+							<p class="app__goalAbout">
+								Вывод на рынок США
+							</p>
+							<div class="app__about">
+								<div class="app__platforms">
+									<h5>
+										Платформы
+									</h5>
+									<p>
 										iOS, Android
-									</li>
-									<li class="result__platform-about-item">
-										300,000 установок
-									</li>
-									<li class="result__platform-about-item">
-										$0.7 средний CPI
-									</li>
-								</ul>
+									</p>
+								</div>
+								<div class="app__result">
+									<h5>
+										Результаты
+									</h5>
+									<ul class="app__result__list">
+										<li>
+											300.000 установок
+										</li>
+										<li>
+											$0.7 средний CPI
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</section>
