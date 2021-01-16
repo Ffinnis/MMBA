@@ -13,14 +13,14 @@
 	<title>MMBA</title>
 </head>
 <body>
-	<div class="header">
+	<header class="header">
 		<div class="container">
 			<nav class="nav">
 				<div class="logo">
 					<img src="img/logo.png" alt="">
 				</div>
 				<div class="menu">
-					<input id="menu__toggle" type="checkbox">
+					<input id="menu__toggle" type="checkbox" onchange='overflow__body()'>
 					<label class="menu__btn" for="menu__toggle">
 						<span></span>
 					</label>
@@ -42,6 +42,12 @@
 						</li>
 						<li class="menu__item">
 							<a href="">Видео-приглашение</a>
+						</li>
+						<li class="menu__item">
+							<a class="takePlace__mobile" href="">Принять участие</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__logo" href="#"><img src="img/logo.png" alt=""></a>
 						</li>
 					</ul>
 				</div>
@@ -83,76 +89,43 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 	<section class="statistics">
 		<div class="container">
-			<div class="stats">
-				<div class="stats-item">
-					<div class="hour">
-						<div class="number">
-							4
-						</div>
-						<div class="word-hour"> 
-							часа
-						</div>
+			<ul class="statistics__list">
+				<li class="statistics__item">
+					<div class="statistics__item__title">
+						<span>4</span> часа
 					</div>
-					<div class="hour__about">
+					<div class="statistics__item__about">
 						Практической, пошаговой информации
 					</div>
-				</div>
-				<div class="stats-item">
-					<div class="hour">
-						<div class="number">
-							10
-						</div>
-						<div class="word-hour"> 
-							этапов
-						</div>
+				</li>
+				<li class="statistics__item">
+					<div class="statistics__item__title">
+						<span>10</span> этапов
 					</div>
-					<div class="hour__about">
+					<div class="statistics__item__about">
 						Практической, пошаговой информации
 					</div>
-				</div>
-				<div class="stats-item">
-					<div class="hour">
-						<div class="number">
-							7
-						</div>
-						<div class="word-hour"> 
-							экспертов
-						</div>
+				</li>
+				<li class="statistics__item">
+					<div class="statistics__item__title">
+						<span>7</span> экспертов
 					</div>
-					<div class="hour__about">
+					<div class="statistics__item__about">
 						Разрабатывали программу обучения
 					</div>
-				</div>
-				<div class="stats-item stats-item__br">
-					<div class="hour">
-						<div class="number">
-							Ноябрь
-						</div>
-						<div class="word-hour"> 
-							2020 
-						</div>
+				</li>
+				<li class="statistics__item">
+					<div class="statistics__item__title">
+						<span>Ноябрь</span> 2020
 					</div>
-					<div class="hour__about">
-						Самые актуальные знания <br> <br>
-					</div>
-				</div>
-				<div class="stats-item stats-item-5 stats-item-last">
-					<div class="hour">
-						<div class="number">
-							Ноябрь
-						</div>
-						<div class="word-hour"> 
-							2020 
-						</div>
-					</div>
-					<div class="hour__about">
+					<div class="statistics__item__about">
 						Самые актуальные знания
 					</div>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 	<section class="getting" id="getting">
