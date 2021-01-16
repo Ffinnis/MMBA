@@ -2,12 +2,24 @@ $(function(){
     $('.caseSlider').slick({
         arrows: true,
         dots: true,
+        responsive: [{
+            breakpoint: 402,
+            settings:{
+                arrows: false,
+            }
+            },]
     });
     $('.review-slider').slick({
         arrows: true,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 511,
+            settings:{
+                arrows: false,
+            }
+            },]
     });
 });
 
